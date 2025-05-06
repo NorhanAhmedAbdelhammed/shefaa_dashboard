@@ -15,16 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Fetch .env from s3
-        uses: keithweaver/aws-s3-github-action@v1.0.0
-        with:
-          command: cp
-          source: s3://shefaa-${{ github.ref_name }}-admin-dashboard-env/
-          destination: .
-          aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_region: eu-central-1
-          flags: --recursive
 
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
