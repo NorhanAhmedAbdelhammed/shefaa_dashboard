@@ -1,0 +1,17 @@
+/* the last import should be the one from shared/.../index as it contains the last edits */
+@import './shared/styles/libs/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --toastify-color-light: #fff;
+  --toastify-color-dark: #040404;
+  --toastify-color-info: #0079b7;
+  --toastify-color-success: #07bc0c;
+  --toastify-color-warning: #dc8400;
+  --toastify-color-error: #e74c3c;
+  --toastify-color-transparent: #e4f2f971;
+  font-size: 16px;
+}
