@@ -7,7 +7,6 @@
   "author": "Mohammed Khallaf <mohammedkhallaf.dev@gmail.com> (https://github.com/MohammadKhallaf)",
   "scripts": {
     "dev": "vite",
-    "start": "react-scripts start",
     "dev:local": "vite --mode be-local --host",
     "build": "vite build",
     "preview": "vite preview",
