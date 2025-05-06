@@ -4,7 +4,7 @@ const envConfigKeys = {
   // base_url: isLocal ? 'http://localhost:3000/api/v1/' : import.meta.env.VITE_API_BASE,
   base_url: isLocal
     ? 'https://shefaa-backend-chhn.onrender.com/api/v1'
-    : import.meta.env.VITE_API_BASE,
+    : 'https://shefaa-backend-chhn.onrender.com/api/v1',
   google_map_key: import.meta.env.VITE_GOOGLE_MAP_API,
 };
 

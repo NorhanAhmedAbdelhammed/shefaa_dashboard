@@ -9,7 +9,7 @@
     "dev": "vite",
     "start": "react-scripts start",
     "dev:local": "vite --mode be-local --host",
-    "build": "npm i && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx}\"",
