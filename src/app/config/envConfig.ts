@@ -1,8 +1,10 @@
 const isLocal = import.meta.env.MODE === 'be-local';
-debugger
+
 const envConfigKeys = {
   // base_url: isLocal ? 'http://localhost:3000/api/v1/' : import.meta.env.VITE_API_BASE,
-  base_url: isLocal ? 'https://shefaa-backend-chhn.onrender.com/api/v1' : 'https://shefaa-backend-chhn.onrender.com/api/v1',
+  base_url: isLocal
+    ? 'https://shefaa-backend-chhn.onrender.com/api/v1'
+    : import.meta.env.VITE_API_BASE,
   google_map_key: import.meta.env.VITE_GOOGLE_MAP_API,
 };
 
