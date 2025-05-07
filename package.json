@@ -15,7 +15,9 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build": "npm run generate-html && vite build",
-    "generate-html": "mkdir -p dist && cp index.html dist/"
+    "generate-html": "mkdir -p dist && cp index.html dist/",
+    "src": "package.json",
+    "use": "vercel-sapper"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.29",
