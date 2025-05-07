@@ -8,13 +8,14 @@
   "scripts": {
     "dev": "vite",
     "dev:local": "vite --mode be-local --host",
-    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "npm run generate-html && vite build",
+    "generate-html": "mkdir -p dist && cp index.html dist/"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.29",
