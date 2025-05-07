@@ -9,14 +9,6 @@
     {
       "src": "vite.config.js",
       "use": "@vercel/static-build"
-    },
-    {
-      "src": "package.json",
-      "use": "vercel-sapper"
-    },
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
     }
   ],
   "outputDirectory": "dist"
